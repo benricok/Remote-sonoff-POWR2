@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen"></style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}</style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #575757;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #4c4c4c;
+}
+::placeholder {
+    color: #bab5ab;
+}
+::selection {
+    background-color: #005ccc;
+    color: #ffffff;
+}
+::-moz-selection {
+    background-color: #005ccc;
+    color: #ffffff;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #545b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #1c1e1f;
+    color: #c5c1b9;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2a2c2e;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #323537;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #3d4043;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #2a2c2e #1c1e1f;
+}</style>
+<meta charset="utf-8">
+<title>HTML Conversion for the Arduino IDE</title>
+<script src="/HTML-source/HTML to string tool/jquery.js"></script>
+<style type="text/css">
+	body{
+		text-align: center;
+		max-width: 800px;
+		margin: 10px auto;
+	}
+	.convertButton {
+	clear: both; 
+	position:relative;
+    margin-top: 30px;	
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:21px;
+	padding:14px 69px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.convertButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.convertButton:active {
+	position:relative;
+	top:1px;
+}
+</style><style class="darkreader darkreader--sync" media="screen"></style>
+<script type="text/javascript">
+$(document).ready(function(){
+	var variableText = '"html ="';
+	var variableTextEnd = '";';
+function gogogo() {
+document.getElementById("htmlOutput").value = '';
+var variableText1 = 'String html ="';
+var variableText = 'html +="';
+var variableTextEnd = '";';
+var htmlInputText = $('#htmlInput').val();
+var res = htmlInputText.replace(/"/g, '\\"');
+res = res.trim();
+res = res.replace(/\s+/g, " ");
+	//alert(res);
+res = res.split("@");
+	for (i = 0; i < res.length; i++) { 
+		if(i > 0){
+	        document.getElementById("htmlOutput").value += 'html += myVariable;';
+		    document.getElementById("htmlOutput").value += '\n';	
+		}
+		if(i == 0){
+			document.getElementById("htmlOutput").value += variableText1 + res[i] + variableTextEnd;
+            document.getElementById("htmlOutput").value += "\n";
+		}
+		else{
+			document.getElementById("htmlOutput").value += variableText + res[i] + variableTextEnd;
+            document.getElementById("htmlOutput").value += "\n";
+		}
+	
+		
+	}    
+    
+}	
+ 
+$( ".convertButton" ).click(function() {
+  gogogo();
+});
+  
+
+});
+</script>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><style class="darkreader darkreader--override" media="screen">.jfk-bubble {
+    background-color: #000000 !important;
+}
+.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}</style></head>
+<body>
+<h2>HTML Conversion for the Arduino IDE</h2>
+<p>This will escape any double quotes (") and spilt it up so you can add
+ in variables for each @ you place in the code. You can then use it as a
+ String variable for serving webpages in boardds like the ESP8266 or the
+ Ethernet Shield.</p>
+<textarea rows="10" cols="100" id="htmlInput" style="display: block;margin-left: auto;margin-right: auto;"></textarea>
+<div style="clear: both; text-align: center;"></div>
+<a href="#" class="convertButton">Convert</a>
+<div id="resultArea">
+<h3 style="display: block;margin-left: auto;margin-right: auto;">The code below 'should' compile fine in the Arduino IDE.</h3>
+<textarea rows="10" cols="100" id="htmlOutput" style="display: block;margin-left: auto;margin-right: auto;"></textarea></div>
+
+
+</body></html>

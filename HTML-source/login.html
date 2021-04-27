@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Iot-controller dashboard</title>
+            <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0, initial-scale=1" />
+            <style>
+                body {text-align: center; margin-top: 50px }
+                .inputSubmit { clear: both; position:relative; margin-top: 10px; -moz-box-shadow: 0px 1px 0px 0px #fff6af; -webkit-box-shadow: 0px 1px 0px 0px #fff6af; box-shadow: 0px 1px 0px 0px #fff6af; background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23)); background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%); background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%); background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%); background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%); background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0); background-color:#ffec64; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; border:1px solid #ffaa22; display:inline-block; cursor:pointer; color:#333333; font-family:Arial; font-size:15px; padding:8px 50px; text-decoration:none; text-shadow:0px 1px 0px #ffee66; }
+                .inputSubmit:hover { background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64)); background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%); background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%); background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%); background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%); background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0); background-color:#ffab23; } 
+                .inputSubmit:active { position:relative; top:2px; }
+                .password {margin-top: 4px;margin-right: 30px}
+                .wrongInput {color: red; margin-top: 6px;}
+            </style>
+        </head>
+        <header>
+            <h2>Please log into the wifi power switch</h2>
+        </header>
+        <body>
+            <br>
+            <form action='/login' method='POST'>
+            User: <input type='text' name='USERNAME' placeholder=' username'><br>
+            Password: <input type='password' class="password" name='PASSWORD' placeholder=' password'>
+            <br>
+            <br class="error">
+            @
+            <br>
+            <br>
+            <input type='submit' class="inputSubmit" name='SUBMIT' value='Submit'><br>
+            </form>
+            <br><br>
+        <a href='/info'>info</a>
+        </body>
+    </html>
